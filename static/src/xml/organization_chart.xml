@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="organization_chart" xml:space="preserve">
+    <t t-name="HomePageOrganizationChart">
+        <div>AAAA</div>
+        <div>Hello <t t-esc="widget.name"/></div>
+        <div id="basicdiagram"></div>
+        <!--<head>-->
+            <!--&lt;!&ndash;<script>&ndash;&gt;-->
+                    <!--&lt;!&ndash;$.noConflict();&ndash;&gt;-->
+            <!--&lt;!&ndash;</script>&ndash;&gt;-->
+            <!--<script type='text/javascript'>//<![CDATA[-->
+                <!--$(window).load(function () {-->
+                    <!--var options = new primitives.orgdiagram.Config();-->
+
+                    <!--var items = [-->
+                        <!--new primitives.orgdiagram.ItemConfig({-->
+                            <!--id: 0,-->
+                            <!--parent: null,-->
+                            <!--title: "Scott Aasrud",-->
+                            <!--description: "VP, Public Sector",-->
+                            <!--image: "demo/images/photos/a.png"-->
+                        <!--}),-->
+                        <!--new primitives.orgdiagram.ItemConfig({-->
+                            <!--id: 1,-->
+                            <!--parent: 0,-->
+                            <!--title: "Ted Lucas",-->
+                            <!--description: "VP, Human Resources",-->
+                            <!--image: "demo/images/photos/b.png"-->
+                        <!--}),-->
+                        <!--new primitives.orgdiagram.ItemConfig({-->
+                            <!--id: 2,-->
+                            <!--parent: 0,-->
+                            <!--title: "Fritz Stüger",-->
+                            <!--description: "Business Solutions, US",-->
+                            <!--image: "demo/images/photos/c.png"-->
+                        <!--})-->
+                    <!--];-->
+
+                    <!--options.items = items;-->
+                    <!--options.cursorItem = 0;-->
+                    <!--options.hasSelectorCheckbox = primitives.common.Enabled.True;-->
+
+                    <!--console.log(items);-->
+                    <!--console.log('aaaaaaa');-->
+
+                    <!--jQuery("#basicdiagram").orgDiagram(options);-->
+                <!--});//]]>-->
+            <!--</script>-->
+        <!--</head>-->
+        <!--<div style="background-color: red;">Home Page Organization Chart</div>-->
+        <!--<div id="basicdiagram" style="width: 640px; height: 480px; border-style: dotted; border-width: 1px;">-->
+        <!--</div>-->
+        <!--<div id="basicdiagram"-->
+             <!--style="width: 640px; height: 480px; border-style: dotted; border-width: 1px;"-->
+             <!--class="ui-widget">-->
+            <!--<div tabindex="0" class="orgdiagram"-->
+                 <!--style="position: relative; overflow: auto; top: 0px; left: 0px; width: 642px; height: 482px; padding: 0px; margin: 0px;">-->
+                <!--<div class="orgdiagram"-->
+                     <!--style="position: absolute; overflow: hidden; top: 0px; left: 0px; width: 617px; height: 457px;">-->
+                    <!--&lt;!&ndash;<div class="placeholder orgdiagram"&ndash;&gt;-->
+                         <!--&lt;!&ndash;style="position: absolute; overflow: hidden; top: 0px; left: 0px; width: 617px; height: 457px; transform-origin: 0px 0px 0px; transform: scale(1, 1);">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer3 LayerBackgroundAnnotations" style="position: absolute; width: 0px; height: 0px;">&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer4 LayerBackgroundConnectorAnnotation" style="position: absolute; width: 0px; height: 0px;"></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer6 LayerConnector" style="position: absolute; width: 0px; height: 0px;">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<svg version="1.1" viewbox="0 0 617 457" style="width: 617px; height: 457px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<path fill-opacity="0" stroke="#c0c0c0" stroke-width="1" stroke-opacity="1" stroke-dasharray="" d="M304.5 150.5L304.5 160.5L369.5 160.5L369.5 170.5M304.5 160.5L239.5 160.5L239.5 170.5">&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;</path>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</svg>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer8 LayerHighlight" style="position: absolute; width: 0px; height: 0px;">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-corner-all bp-highlight-frame" style="border-width: 1px; width: 130px; height: 134px; top: 18px; left: 238.5px; position: absolute; padding: 0px; margin: 0px; visibility: inherit;"></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;<div class="Layer9 LayerMarker" style="position: absolute; width: 0px; height: 0px;"></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer10 LayerLabel" style="position: absolute; width: 0px; height: 0px;"></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer11 LayerCursor" style="position: absolute; width: 0px; height: 0px;">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-corner-all bp-cursor-frame" style="width: 124px; height: 104px; border-width: 2px; top: 20px; left: 240.5px; position: absolute; padding: 0px; margin: 0px;"></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer12 LayerItem" style="position: absolute; width: 0px; height: 0px;">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-corner-all bt-item-frame" style="border-width: 1px; width: 119px; height: 99px; top: 23px; left: 243.5px; position: absolute; padding: 0px; margin: 0px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div name="titleBackground" class="bp-item bp-corner-all bp-title-frame" style="top: 2px; left: 2px; width: 114px; height: 18px; background: rgb(65, 105, 225);">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div name="title" class="bp-item bp-title" style="top: 1px; left: 4px; width: 106px; height: 16px; color: rgb(255, 255, 255);">Scott Aasrud</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="bp-item bp-photo-frame" style="top: 24px; left: 2px; width: 50px; height: 60px;"><img name="photo" alt="Scott Aasrud" style="width: 50px; height: 60px;" src="demo/images/photos/a.png"/>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div name="description" class="bp-item bp-description" style="top: 24px; left: 56px; width: 58px; height: 74px;">VP, Public Sector</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-corner-all bt-item-frame" style="border-width: 1px; width: 119px; height: 99px; top: 170px; left: 178.5px; position: absolute; padding: 0px; margin: 0px;"><div name="titleBackground" class="bp-item bp-corner-all bp-title-frame" style="top: 2px; left: 2px; width: 114px; height: 18px; background: rgb(65, 105, 225);">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div name="title" class="bp-item bp-title" style="top: 1px; left: 4px; width: 106px; height: 16px; color: rgb(255, 255, 255);">Ted Lucas</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="bp-item bp-photo-frame" style="top: 24px; left: 2px; width: 50px; height: 60px;"><img name="photo" alt="Ted Lucas" style="width: 50px; height: 60px;" src="demo/images/photos/b.png"/>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div name="description" class="bp-item bp-description" style="top: 24px; left: 56px; width: 58px; height: 74px;">VP, Human Resources</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-corner-all bt-item-frame" style="border-width: 1px; width: 119px; height: 99px; top: 170px; left: 308.5px; position: absolute; padding: 0px; margin: 0px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div name="titleBackground" class="bp-item bp-corner-all bp-title-frame" style="top: 2px; left: 2px; width: 114px; height: 18px; background: rgb(65, 105, 225);">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div name="title" class="bp-item bp-title" style="top: 1px; left: 4px; width: 106px; height: 16px; color: rgb(255, 255, 255);">Fritz Stüger</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="bp-item bp-photo-frame" style="top: 24px; left: 2px; width: 50px; height: 60px;"><img name="photo" alt="Fritz Stüger" style="width: 50px; height: 60px;" src="demo/images/photos/c.png"/></div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div name="description" class="bp-item bp-description" style="top: 24px; left: 56px; width: 58px; height: 74px;">Business Solutions, US</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer13 LayerForegroundAnnotations" style="position: absolute; width: 0px; height: 0px;"></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer14 LayerForegroundConnectorAnnotation" style="position: absolute; width: 0px; height: 0px;"></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="Layer16 LayerControls" style="position: absolute; width: 0px; height: 0px;">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-selectioncheckbox-frame" style="width: 120px; height: 20px; top: 130px; left: 243.5px; position: absolute; padding: 0px; margin: 0px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<nobr>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<input type="checkbox" name="checkbox" class="bp-selectioncheckbox">&nbsp;&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<span name="selectiontext" class="bp-selectiontext">Selected</span>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</input>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</nobr>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-selectioncheckbox-frame" style="width: 120px; height: 20px; top: 274px; left: 178.5px; position: absolute; padding: 0px; margin: 0px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<nobr>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<input type="checkbox" name="checkbox" class="bp-selectioncheckbox">&nbsp;&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<span name="selectiontext" class="bp-selectiontext">Selected</span>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</input>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</nobr>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="bp-item bp-selectioncheckbox-frame" style="width: 120px; height: 20px; top: 274px; left: 308.5px; position: absolute; padding: 0px; margin: 0px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<nobr>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<input type="checkbox" name="checkbox" class="bp-selectioncheckbox">&nbsp;&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<span name="selectiontext" class="bp-selectiontext">Selected</span>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</input>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</nobr>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="calloutplaceholder orgdiagram" style="position: absolute; overflow: visible; top: 0px; left: 0px; width: 0px; height: 0px; display: none; visibility: hidden;">&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </t>
+</templates>

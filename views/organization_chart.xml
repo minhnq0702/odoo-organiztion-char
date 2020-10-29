@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="organization_chart_assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <!--Basic Primitive Lib-->
+                <script type="text/javascript" src="/organization_chart/static/src/js/primitives.min.js"></script>
+                <link rel="stylesheet" href="/organization_chart/static/src/css/primitives.latest.css"/>
+
+                <!--<script>-->
+                    <!--$.noConflict();-->
+                <!--</script>-->
+                <link rel="stylesheet" href="/organization_chart/static/src/css/organization_chart.css"/>
+                <script type="text/javascript" src="/organization_chart/static/src/js/organization_chart.js"/>
+
+                <!--<script type='text/javascript'>//<![CDATA[-->
+                <!--$(window).load(function () {-->
+                    <!--var options = new primitives.orgdiagram.Config();-->
+
+                    <!--var items = [-->
+                        <!--new primitives.orgdiagram.ItemConfig({-->
+                            <!--id: 0,-->
+                            <!--parent: null,-->
+                            <!--title: "Scott Aasrud",-->
+                            <!--description: "VP, Public Sector",-->
+                            <!--image: "demo/images/photos/a.png"-->
+                        <!--}),-->
+                        <!--new primitives.orgdiagram.ItemConfig({-->
+                            <!--id: 1,-->
+                            <!--parent: 0,-->
+                            <!--title: "Ted Lucas",-->
+                            <!--description: "VP, Human Resources",-->
+                            <!--image: "demo/images/photos/b.png"-->
+                        <!--}),-->
+                        <!--new primitives.orgdiagram.ItemConfig({-->
+                            <!--id: 2,-->
+                            <!--parent: 0,-->
+                            <!--title: "Fritz Stüger",-->
+                            <!--description: "Business Solutions, US",-->
+                            <!--image: "demo/images/photos/c.png"-->
+                        <!--})-->
+                    <!--];-->
+
+                    <!--options.items = items;-->
+                    <!--options.cursorItem = 0;-->
+                    <!--options.hasSelectorCheckbox = primitives.common.Enabled.True;-->
+
+                    <!--console.log(items);-->
+                    <!--console.log('aaaaaaa');-->
+
+                    <!--jQuery("#basicdiagram").orgDiagram(options);-->
+                <!--});//]]>-->
+            <!--</script>-->
+            </xpath>
+        </template>
+
+
+        <menuitem id="main_organization_chart_menu" name="Organization Chart"/>
+
+        <menuitem id="organization_chart_menu" name="Organization Chart"
+            parent="main_organization_chart_menu"/>
+
+        <record id="action_home_page" model="ir.actions.client">
+            <field name="name">Organization Chart Home</field>
+            <field name="tag">organization_chart.homepage</field>
+        </record>
+
+        <menuitem id="home_page_organization_chart_menu" name="Home Page" parent="organization_chart_menu"
+            action="action_home_page"/>
+
+    </data>
+</openerp>
